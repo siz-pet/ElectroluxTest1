@@ -1,0 +1,2 @@
+2019-4-1 13:33:54 [123] ERROR: Some exception occured
+2019-4-1 13:33:57 [190] ERROR: Invalid input
