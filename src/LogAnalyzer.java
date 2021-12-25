@@ -22,12 +22,10 @@ public class LogAnalyzer {
 		try {
 			logFileLines = Files.lines(logFilePath);
 			logFileLines.forEach(line -> {
-				int count = 0;
 				try {
 					BufferedWriter output = new BufferedWriter(new FileWriter(resultedLogFile, true));
 					// in current implementation only uppercase ERROR entries are being found
 					if (line.contains("ERROR:")) {
-						count++;
 						output.append(line);
 						output.newLine();
 					}
